@@ -1,0 +1,74 @@
+.step-content-container {
+  margin-top: 2rem;
+}
+.step-add-on {
+  margin-top: 1rem;
+}
+.card-addon-btn {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--Alabaster);
+  border: 1px solid var(--Cool-gray);
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.card-addon-btn:focus,
+.card-addon-btn:active {
+  outline: 1px solid var(--Purplish-blue);
+}
+
+.card-left,
+.card-right {
+  flex-grow: 0;
+}
+.card-mid {
+  flex-grow: 1;
+}
+div.checkbox {
+  pointer-events: none;
+  border: 1px solid var(--Cool-gray);
+  height: 18px;
+  width: 18px;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+/* util */
+div.checkbox-active {
+  background-color: var(--Purplish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-mid {
+  text-align: left;
+}
+.add-on-title {
+  color: var(--Marine-blue);
+  font-weight: 700;
+}
+
+.add-on-subtitle {
+  color: var(--Cool-gray);
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.add-on-price {
+  color: var(--Purplish-blue);
+}
+
+@media screen and (min-width: 850px) {
+  .step-add-on-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

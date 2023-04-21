@@ -1,0 +1,66 @@
+div.steps {
+  display: flex;
+  width: min(90%);
+  margin-inline: auto;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.back-step {
+  font-size: 0.8rem;
+  color: var(--Cool-gray);
+  font-weight: 00;
+  background-color: transparent;
+  cursor: pointer;
+}
+button.back-step:hover {
+  color: var(--Marine-blue);
+}
+button.back-step:focus {
+  color: var(--Marine-blue);
+  outline: 1px solid var(--Purplish-blue);
+  outline-offset: 0.75rem;
+}
+
+button.next-step {
+  cursor: pointer;
+  background-color: var(--Marine-blue);
+  padding: 0.8rem 1rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+button.next-step:hover {
+  background-color: var(--Marine-blue);
+  opacity: 0.9;
+}
+button.next-step:focus {
+  background-color: var(--Marine-blue);
+}
+button.next-step:active {
+  background-color: var(--Pastel-blue);
+}
+
+/* util */
+button.back-hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media screen and (min-width: 850px) {
+  div.steps {
+    padding: 0;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 0;
+  }
+
+  button.next-step {
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

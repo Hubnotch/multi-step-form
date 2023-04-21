@@ -1,0 +1,55 @@
+.card-plan {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: var(--Alabaster);
+  cursor: pointer;
+}
+
+.card-plan-sel {
+  background-color: var(--Magnolia) !important;
+  outline: 1px solid var(--Purplish-blue);
+}
+
+.card-plan:focus,
+.card-plan:active {
+  border: 1px solid var(--Purplish-blue);
+}
+
+.plan-content {
+  text-align: left;
+  padding-top: 0.2rem;
+}
+.plan-title {
+  color: var(--Marine-blue);
+  font-weight: 700;
+}
+
+.plan-price {
+  color: var(--Cool-gray);
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+}
+
+.plan-2free {
+  color: var(--Marine-blue);
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-top: 0.4rem;
+}
+
+@media screen and (min-width: 850px) {
+  .card-plan {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .plan-title {
+    font-size: 1rem;
+  }
+}

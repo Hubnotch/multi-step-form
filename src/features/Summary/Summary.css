@@ -1,0 +1,61 @@
+.summary-text-plan-title,
+/* util */
+.font-thick {
+  font-weight: 700;
+}
+
+/* styles */
+
+ul.FinishingUp-list {
+  background-color: var(--Alabaster);
+  border-radius: var(--border-radius);
+}
+
+li.FinishingUp-list,
+div.FinishingUp-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+}
+
+li.FinishingUp-list:first-of-type {
+  position: relative;
+}
+
+div.FinishingUp-list-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Light-gray);
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  bottom: 0;
+}
+
+.summary-text-plan-title,
+.summary-text-plan-price {
+  color: var(--Marine-blue);
+}
+
+p.summary-link {
+  text-decoration: underline;
+  color: var(--Cool-gray);
+  cursor: pointer;
+}
+
+p.summary-link:hover {
+  color: var(--Purplish-blue);
+}
+
+.summary-addon-text {
+  color: var(--Cool-gray);
+}
+
+div.FinishingUp-list {
+  margin-top: 1rem;
+}
+
+.summary-total-price {
+  color: var(--Purplish-blue);
+  font-size: 1.4rem;
+}

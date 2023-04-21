@@ -1,0 +1,50 @@
+/* util */
+.move-sel {
+  transform: translateX(150%);
+}
+.billing-inactive {
+  color: var(--Cool-gray) !important;
+}
+
+.billing-container {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--Alabaster);
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.billing-mo,
+.billing-yr {
+  font-size: 0.8rem;
+  color: var(--Marine-blue);
+  font-weight: 700;
+}
+
+.billing-btn {
+  width: 3rem;
+  padding: 4px;
+  border-radius: 2rem;
+  background-color: var(--Marine-blue);
+  cursor: pointer;
+}
+
+.billing-btn:focus {
+  outline: 1px solid var(--Purplish-blue);
+}
+
+.billing-sel {
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  border-radius: 100%;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.billing-sel > p {
+  display: none;
+}
